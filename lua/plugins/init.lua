@@ -1,5 +1,17 @@
 return {
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  {
+    require("configs.todo"),
+  },
+  {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -77,15 +89,6 @@ return {
     event = "BufEnter",
     config = function()
       require("configs.codeium")
-    end,
-  },
-
-  {
-    "folke/todo-comments.nvim",
-    event = { "BufRead", "BufNewFile" },
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("configs.comments")
     end,
   },
 
