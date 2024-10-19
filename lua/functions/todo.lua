@@ -18,5 +18,5 @@ vim.api.nvim_set_keymap(
   "<C-o>:lua require('user_functions.todos').insert_todo_and_comment()<CR>",
   { noremap = true, silent = true }
 )
-
+-- :TODO Claro que não funciona
 return M

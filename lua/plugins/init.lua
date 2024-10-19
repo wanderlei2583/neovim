@@ -82,9 +82,18 @@ return {
 
   {
     "folke/todo-comments.nvim",
+    event = { "BufRead", "BufNewFile" },
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("configs.comments")
+    end,
+  },
+
+  {
+    "folke/zen-mode.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("configs.zenmode")
     end,
   },
 
