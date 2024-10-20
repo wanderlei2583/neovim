@@ -1,5 +1,12 @@
 return {
   {
+    "kdheepak/lazygit.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("configs.lazygit")
+    end,
+  },
+  {
     "lewis6991/gitsigns.nvim",
     event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
