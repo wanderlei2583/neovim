@@ -1,12 +1,15 @@
 # Configuração Personalizada do Neovim
-
+<!--FIX: Minhas configurações personalizadas.-->
 Este repositório contém minha configuração personalizada do Neovim, baseada no NvChad e estendida com plugins adicionais para melhorar minha produtividade e experiência de codificação.
-
+___
 ## Pré-requisitos
 
-- Neovim (versão 0.5.0 ou superior)
+- Neovim (versão 0.9.0 ou superior)
 - [NvChad](https://nvchad.github.io/) instalado
 - Git
+- Lua 
+- LuaSnip
+
 
 ## Plugins Utilizados
 
@@ -22,8 +25,7 @@ Este repositório contém minha configuração personalizada do Neovim, baseada 
 
 ## Instalação
 
-1. Certifique-se de ter o NvChad instalado.
-2. Clone este repositório:
+1. Clone este repositório:
    ```
    git clone https://github.com/wanderlei2583/neovim.git ~/.config/nvim
    ```
