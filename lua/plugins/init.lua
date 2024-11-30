@@ -35,6 +35,16 @@ return {
     end,
   },
   {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    lazy = true,
+    ft = "markdown",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("configs.obsidian")
+    end,
+  },
+  {
     "stevearc/oil.nvim",
     event = "VimEnter",
     dependencies = { "nvim-tree/nvim-web-devicons" },

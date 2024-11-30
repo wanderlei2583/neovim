@@ -11,7 +11,7 @@ local options = {
   },
   formatters = {
     ["goimports-reviser"] = {
-      prepend_args = { "-rm-unused" },
+      prepend_args = { "-set-alias", "-format", "-recursive" },
     },
     golines = {
       prepend_args = { "--max-len=80" },
