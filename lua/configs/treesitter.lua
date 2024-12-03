@@ -18,10 +18,6 @@ local options = {
     "python",
     "html",
   },
-  auto_install = true,
-  sync_install = false,
-  ignore_install = { "" },
-
   highlight = {
     enable = true,
     use_languagetree = true,
