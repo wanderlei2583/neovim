@@ -1,5 +1,19 @@
 return {
   {
+    "rest-nvim/rest.nvim",
+    ft = { "http" },
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("configs.rest")
+    end,
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    config = function()
+      require("configs.smear_cursor")
+    end,
+  },
+  {
     "kdheepak/lazygit.nvim",
     event = "VeryLazy",
     config = function()
@@ -12,6 +26,12 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("configs.gitsigns")
+    end,
+  },
+  {
+    "f-person/git-blame.nvim",
+    config = function()
+      require("configs.git-blame")
     end,
   },
   {
